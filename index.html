@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cinematic Masterpieces</h1>
+        <p>Explore a curated collection of timeless films that have captivated audiences worldwide.</p>
+      </header>
+
+    <main>
+        <div class="grid-container">
+            <!-- Movie 1 -->
+            <div class="movie">
+                <img src="images/Inception Poster.jpg" alt="Inception" />
+                <h2>Inception</h2>
+                <p>
+                    Inception is a mind-bending thriller directed by Christopher Nolan. It explores the concept of
+                    dreams within dreams and the power of the subconscious mind. The film follows a skilled thief who
+                    manipulates dreams to plant an idea deep within a target's mind.
+                </p>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="movie">
+                <img src="images/The Dark Knight Poster.jpg" alt="The Dark Knight" />
+                <h2>The Dark Knight</h2>
+                <p>
+                    The Dark Knight is a gripping masterpiece by Christopher Nolan, featuring Batman’s intense battle
+                    against the Joker. The film explores themes of chaos, morality, and the fine line between heroism
+                    and villainy.
+                </p>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="movie">
+                <img src="images/Interstellar Poster.jpg" alt="Interstellar" />
+                <h2>Interstellar</h2>
+                <p>
+                    Interstellar is a sci-fi epic by Christopher Nolan that explores space exploration and humanity’s
+                    survival. Blending science with deep emotion, it follows astronauts on a journey through a wormhole
+                    to find a new home for mankind.
+                </p>
+            </div>
+
+            <!-- Movie 4 -->
+            <div class="movie">
+                <img src="images/The Matrix poster.jpg" alt="The Matrix" />
+                <h2>The Matrix</h2>
+                <p>
+                    The Matrix is a groundbreaking sci-fi film by the Wachowskis, exploring a simulated reality and
+                    humanity’s fight for freedom. It follows a hacker who discovers the truth about his world and joins
+                    a rebellion against its controllers.
+                </p>
+            </div>
+
+            <!-- Movie 5 -->
+            <div class="movie">
+                <img src="images/Gladiator Poster.jpg" alt="Gladiator" />
+                <h2>Gladiator</h2>
+                <p>
+                    Gladiator is a historical epic directed by Ridley Scott, following a betrayed Roman general’s quest
+                    for vengeance. Forced into slavery, he rises as a gladiator to challenge the corrupt emperor who
+                    wronged him.
+                </p>
+            </div>
+
+            <!-- Movie 6 -->
+            <div class="movie">
+                <img src="images/The Lord of the Rings Poster.jpg" alt="The Lord of the Rings" />
+                <h2>The Lord of the Rings</h2>
+                <p>
+                    The Lord of the Rings is an epic fantasy trilogy directed by Peter Jackson. It follows a heroic
+                    quest to destroy the One Ring and defeat the dark lord Sauron, featuring breathtaking battles, rich
+                    mythology, and unforgettable characters.
+                </p>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <h2>Trailer: Inception</h2>
+            <div class="thumbnail-wrapper">
+                <img src="https://img.youtube.com/vi/YoHD9XEInc0/maxresdefault.jpg" alt="Inception Trailer Thumbnail"
+                    class="video-thumbnail" />
+                <div class="play-button"><i class="fas fa-play"></i></div>
+            </div>
+        </div>
+
+        <!-- Video-->
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe id="videoIframe" width="1000" height="500" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Favorite Movies</p>
+    </footer>
+</body>
+
+</html>
