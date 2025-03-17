@@ -1,10 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const videoThumbnail = document.querySelector(".thumbnail-wrapper");
-    const videoURL = "https://www.youtube.com/embed/YoHD9XEInc0?autoplay=1";
+    const modal = document.getElementById("videoModal");
+    const videoIframe = document.getElementById("videoIframe");
+    const closeModal = document.querySelector(".close");
 
-    // Video thumbnail 
+    if (!videoThumbnail) {
+        // for error checking purpose
+        console.error("Thumbnail element not found.");
+        return;
+    }
+    const videoURL = "https://www.youtube-nocookie.com/embed/YoHD9XEInc0?autoplay=1";
+    // Open modal event listener
     videoThumbnail.addEventListener("click", function () {
-        videoThumbnail.innerHTML = `<iframe width="1000" height="500" src="${videoURL}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+        videoIframe.src = videoURL;
+        modal.classList.add("active");
+    });
+    // Close modal event listener
+    closeModal.addEventListener("click", function () {
+        videoIframe.src = "";
+        modal.classList.remove("active");
+    });
+    // Closing the modal when clicking outside 
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            videoIframe.src = "";
+            modal.classList.remove("active");
+        }
     });
 });
