@@ -35,7 +35,7 @@ Follow these steps to run the project locally:
 3. **Locate the Files:**
    - Open the folder containing the project files. Ensure the following files are present:
      - `index.html` (Main HTML file)
-     - `style.css` (CSS file for styling)
+     - `styles.css` (CSS file for styling)
      - `script.js` (JavaScript file )
      - `images` folder (Contains the movie posters)
 
